@@ -1,0 +1,66 @@
+// 添加全局样式文件
+.page-container {
+    padding: 20px;
+    background: var(--theme-bg-color);
+    border-radius: 8px;
+    box-shadow: var(--theme-box-shadow-light);
+
+    .page-header {
+        margin-bottom: 24px;
+
+        .page-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--theme-text-color);
+        }
+
+        .page-desc {
+            margin-top: 8px;
+            color: var(--theme-text-color-secondary);
+        }
+    }
+
+    .page-content {
+        background: var(--theme-bg-color-overlay);
+        border-radius: 8px;
+        padding: 24px;
+    }
+
+    .page-footer {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid var(--theme-border-color-light);
+    }
+}
+
+// 统一卡片样式
+.custom-card {
+    background: var(--theme-bg-color);
+    border: 1px solid var(--theme-border-color);
+    border-radius: 8px;
+    box-shadow: var(--theme-box-shadow-light);
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: var(--theme-box-shadow);
+    }
+}
+
+// 统一表格样式
+.custom-table {
+    .el-table {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .el-table__header {
+        background: var(--theme-bg-color-overlay);
+    }
+}
+
+// 统一按钮组样式
+.button-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}

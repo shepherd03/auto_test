@@ -1,0 +1,126 @@
+{
+  "code": 0,
+  "msg": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "测试系统",
+      "url": null,
+      "openStyle": 0,
+      "icon": "icon-bug",
+      "children": [
+        {
+          "id": 14,
+          "name": "单模块测试",
+          "url": "businesstest/SingleTest",
+          "openStyle": 0,
+          "icon": "icon-aim"
+        },
+        {
+          "id": 15,
+          "name": "接口比较测试",
+          "url": "businesstest/CompareTest",
+          "openStyle": 0,
+          "icon": "icon-swap"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "快捷对话",
+      "url": "dialogue/Dialogue",
+      "openStyle": 0,
+      "icon": "icon-comment"
+    },
+    {
+      "id": 3,
+      "name": "管理",
+      "url": null,
+      "openStyle": 0,
+      "icon": "icon-setting",
+      "children": [
+        {
+          "id": 31,
+          "name": "模板问题管理",
+          "url": "manage/template_questions/TemplateManage",
+          "openStyle": 0,
+          "icon": "icon-file"
+        },
+        {
+          "id": 32,
+          "name": "问题分类管理",
+          "url": "manage/question_banks/QuestionBanksManage",
+          "openStyle": 0,
+          "icon": "icon-folder"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "数据查看",
+      "url": null,
+      "openStyle": 0,
+      "icon": "icon-database",
+      "children": [
+        {
+          "id": 41,
+          "name": "Redis-12",
+          "url": "dataview/Redis-12",
+          "openStyle": 0,
+          "icon": "icon-sever"
+        },
+        {
+          "id": 42,
+          "name": "回复固定句式",
+          "url": "dataview/FixedReplyFormat",
+          "openStyle": 0,
+          "icon": "icon-message"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "工具",
+      "url": null,
+      "openStyle": 0,
+      "icon": "icon-wrench",
+      "children": [
+        {
+          "id": 51,
+          "name": "格式转换器",
+          "url": "utils/FormatConverter",
+          "openStyle": 0,
+          "icon": "icon-swap"
+        },
+        {
+          "id": 52,
+          "name": "JSON比较器",
+          "url": "utils/JsonCompare",
+          "openStyle": 0,
+          "icon": "icon-diff"
+        },
+        {
+          "id": 53,
+          "name": "Excel预览",
+          "url": "utils/ExcelViewer",
+          "openStyle": 0,
+          "icon": "icon-file-excel"
+        },
+        {
+          "id": 54,
+          "name": "JSON查看器",
+          "url": "utils/JsonViewer",
+          "openStyle": 0,
+          "icon": "icon-code"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "图标查看",
+      "url": "icons/index",
+      "openStyle": 0,
+      "icon": "icon-appstore"
+    }
+  ]
+}

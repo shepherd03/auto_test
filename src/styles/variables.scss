@@ -1,0 +1,47 @@
+:root {
+  --theme-aside-width: 22vh;
+  --theme-header-height: 5vh;
+  --theme-border-color-light: #f1f2f3;
+  --theme-logo-text-color: var(--el-color-primary);
+
+  --theme-menu-text-color: #333333;
+  --theme-menu-bg-color: #ffffff;
+  --theme-menu-border-color: var(--el-color-primary);
+  --theme-menu-hover-color: var(--el-color-primary);
+  --theme-menu-hover-bg-color: var(--el-color-primary-light-9);
+
+  --theme-header-bg-color: #ffffff;
+  --theme-header-text-color: #444444;
+  --theme-header-hover-color: rgba(0, 0, 0, 0.1);
+
+  --theme-main-bg-color: #f0f2f5;
+
+  // 基础主题色
+  --theme-primary-color: var(--el-color-primary);
+  --theme-success-color: var(--el-color-success);
+  --theme-warning-color: var(--el-color-warning);
+  --theme-danger-color: var(--el-color-danger);
+  --theme-info-color: var(--el-color-info);
+
+  // 背景色
+  --theme-bg-color: var(--el-bg-color);
+  --theme-bg-color-overlay: var(--el-bg-color-overlay);
+
+  // 文字颜色
+  --theme-text-color: var(--el-text-color-primary);
+  --theme-text-color-secondary: var(--el-text-color-secondary);
+
+  // 边框颜色
+  --theme-border-color: var(--el-border-color);
+  --theme-border-color-light: var(--el-border-color-lighter);
+  --theme-border-color-dark: var(--el-border-color-darker);
+
+  // 阴影
+  --theme-box-shadow: var(--el-box-shadow);
+  --theme-box-shadow-light: var(--el-box-shadow-light);
+  --theme-box-shadow-dark: var(--el-box-shadow-dark);
+
+  // 字体
+  --theme-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --theme-code-font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+}
