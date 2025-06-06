@@ -74,13 +74,13 @@
       </div>
     </el-card>
     
-    <el-card class="stats-card" v-if="appliedRules.length > 0">
+    <el-card class="stats-card" v-if="comparisonResult.appliedRules.length > 0">
       <template #header>
         <span>应用的规则</span>
       </template>
       <div class="applied-rules">
         <el-tag 
-          v-for="rule in appliedRules" 
+          v-for="rule in comparisonResult.appliedRules" 
           :key="rule" 
           size="small" 
           class="rule-tag"
@@ -110,15 +110,6 @@ const props = defineProps({
   comparisonResult: {
     type: Object as () => JsonComparisonResult,
     default: () => ({})
-  },
-
-  differences: {
-    type: Array as () => JsonDifference[],
-    default: () => []
-  },
-  appliedRules: {
-    type: Array as () => string[],
-    default: () => []
   },
   leftTitle: {
     type: String,

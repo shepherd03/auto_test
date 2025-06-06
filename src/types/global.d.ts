@@ -48,7 +48,7 @@ declare global {
         removedCount: number
         modifiedCount: number
         compareTime: string
-        appliedRules: JsonCompareRules
+        appliedRules: Array<string>
     }
 
     /**

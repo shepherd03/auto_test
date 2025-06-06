@@ -86,15 +86,12 @@ import JsonCompare from '@/views/utils/JsonCompare.vue'
 import { useMicroService } from '@/composables/useMicroService'
 
 const {
-        services,
-        firstService,
-        secondService,
-        changeFirstService,
-        changeSecondService,
-        getServiceByName,
-        runFirstService,
-        runSecondService
-    } = useMicroService()
+   services,
+   firstService,
+   secondService,
+   runFirstService,
+   runSecondService
+} = useMicroService()
 
 // 表单配置
 const formTestInput = ref('')

@@ -137,8 +137,7 @@
             <JsonStatsViewer 
               :leftJsonStats="leftJsonStats"
               :rightJsonStats="rightJsonStats"
-              :differences="differences"
-              :compareTime="compareTime"
+              :comparison-result="compareResult"
               :leftTitle="leftTitle"
               :rightTitle="rightTitle"
             />
@@ -223,6 +222,7 @@ const {
   // 计算属性
   canCompare,
   activeRulesCount,
+  compareResult,
 
   // 方法
   swapJsons,
@@ -232,7 +232,6 @@ const {
   toggleSidebar,
   exportResults,
   setJsonContent,
-  getComparisonResult
 } = useJsonCompare({
   initialLeftJson: props.initialLeftJson,
   initialRightJson: props.initialRightJson,
@@ -254,7 +253,6 @@ onMounted(() => {
 // 暴露给父组件的方法
 defineExpose({
   setJsonContent,
-  getComparisonResult,
   compareJson,
   exportResults,
   resetRules: () => rulesEditorRef.value?.resetRules

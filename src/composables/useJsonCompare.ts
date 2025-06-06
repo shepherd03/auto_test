@@ -64,6 +64,18 @@ export function useJsonCompare({
     return differences.value.filter(d => d.type === diffFilter.value)
   })
 
+  const compareResult = computed<JsonComparisonResult>(() => {
+    return {
+      similarity: similarity.value,
+      totalDifferences: differences.value.length,
+      addedCount: addedCount.value,
+      removedCount: removedCount.value,
+      modifiedCount: modifiedCount.value,
+      compareTime: compareTime.value,
+      appliedRules: appliedRulesText.value
+    }
+  })
+
   const similarity = computed<number>(() => {
     if (!comparisonResult.value) return 0
     const totalFields = Math.max(leftJsonStats.value.totalFields, rightJsonStats.value.totalFields)
@@ -154,19 +166,6 @@ export function useJsonCompare({
     }
   }
 
-  // 获取比较结果（用于外部调用）
-  function getComparisonResult() {
-    return {
-      differences: differences.value,
-      similarity: similarity.value,
-      addedCount: addedCount.value,
-      removedCount: removedCount.value,
-      modifiedCount: modifiedCount.value,
-      compareTime: compareTime.value,
-      appliedRules: appliedRulesText.value
-    }
-  }
-
   return {
     // 状态
     leftJson,
@@ -191,6 +190,7 @@ export function useJsonCompare({
     removedCount,
     modifiedCount,
     filteredDifferences,
+    compareResult,
     similarity,
 
     // 方法
@@ -200,7 +200,6 @@ export function useJsonCompare({
     compareJson,
     toggleSidebar,
     exportResults,
-    setJsonContent,
-    getComparisonResult
+    setJsonContent
   }
 }
