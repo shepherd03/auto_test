@@ -70,6 +70,34 @@ declare global {
         name: ServiceName,
         api: (msg: string) => Promise<ResponseContent<any>>,
     }
+
+    interface PreviewColumn {
+        prop: string
+        label: string
+        width?: string
+    }
+
+    interface PreviewRow {
+        index: number
+        value: string | number | null
+    }
+
+    interface SelectedData {
+        sheet: string
+        column: string
+        startRow: number
+        endRow: number
+        data: Array<string | number | null>
+    }
+
+    interface UploadFile {
+        name: string
+        size: number
+        raw: File
+    }
+    type CellData = string | number | null
+
+    type ExcelData = Array<Array<CellData>>
 }
 
 export { }

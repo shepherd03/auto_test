@@ -343,4 +343,8 @@ defineExpose({
 .result-tabs {
   height: 100%;
 }
+
+.result-tabs :deep(.el-tabs__content) {
+  overflow-y: auto;
+}
 </style>

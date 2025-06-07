@@ -10,14 +10,14 @@
       "icon": "icon-bug",
       "children": [
         {
-          "id": 14,
+          "id": 11,
           "name": "单模块测试",
           "url": "businesstest/SingleTest",
           "openStyle": 0,
           "icon": "icon-aim"
         },
         {
-          "id": 15,
+          "id": 12,
           "name": "接口比较测试",
           "url": "businesstest/CompareTest",
           "openStyle": 0,
@@ -87,27 +87,13 @@
       "children": [
         {
           "id": 51,
-          "name": "格式转换器",
-          "url": "utils/FormatConverter",
-          "openStyle": 0,
-          "icon": "icon-swap"
-        },
-        {
-          "id": 52,
           "name": "JSON比较器",
           "url": "utils/JsonCompare",
           "openStyle": 0,
           "icon": "icon-diff"
         },
         {
-          "id": 53,
-          "name": "Excel预览",
-          "url": "utils/ExcelViewer",
-          "openStyle": 0,
-          "icon": "icon-file-excel"
-        },
-        {
-          "id": 54,
+          "id": 52,
           "name": "JSON查看器",
           "url": "utils/JsonViewer",
           "openStyle": 0,
@@ -117,10 +103,26 @@
     },
     {
       "id": 6,
-      "name": "图标查看",
-      "url": "icons/index",
+      "name": "组件预览",
+      "url": null,
       "openStyle": 0,
-      "icon": "icon-appstore"
+      "icon": "icon-wrench",
+      "children": [
+        {
+          "id": 61,
+          "name": "Excel列选择器",
+          "url": "components_preview/ExcelColumnSelectorPreview",
+          "openStyle": 0,
+          "icon": "icon-file-excel"
+        },
+        {
+          "id": 62,
+          "name": "图标查看",
+          "url": "components_preview/IconsPreview",
+          "openStyle": 0,
+          "icon": "icon-appstore"
+        }
+      ]
     }
   ]
 }
